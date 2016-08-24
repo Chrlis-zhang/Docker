@@ -1,6 +1,8 @@
 # Dockerfile
 一、Centos7
+ 
   1.Dockerfile文件，
+ 
   2.susupervisord.conf,在构建基础镜像的时候会用到配置文件
 
 
