@@ -13,10 +13,14 @@ ENV TERX xterm
 RUN yum install -y wget epel-release
 
 #注释的是替换成阿里源，根据情况选择
+
+#这个是直接网络上下载
 #RUN yum install -y wget epel-release
 #RUN mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
 #RUN wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 #RUN yum makecache
+
+#这个是把文件放到和Dockerfile一个目录
 #ADD aliyun-mirror.repo /etc/yum.repos.d/CentOS-Base.repo
 #ADD aliyun-epel.repo /etc/yum.repos.d/epel.repo
 
