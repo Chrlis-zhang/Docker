@@ -10,7 +10,6 @@ FROM centos:centos7.2.1511
 ENV TZ "Asia/shanghai"
 ENV TERX xterm
 
-RUN yum install -y wget epel-release
 
 #注释的是替换成阿里源，根据情况选择
 
