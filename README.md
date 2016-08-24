@@ -1,9 +1,9 @@
 # Docker
 一、Centos7
  
-  1.Dockerfile文件，
+  1.Dockerfile文件
  
-  2.susupervisord.conf,在构建镜像的时候会用到配置文件
+  2.susupervisord.conf    在构建镜像的时候会用到配置文件
 
 
 二、JDK
