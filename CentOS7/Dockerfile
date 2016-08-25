@@ -3,7 +3,7 @@
 #DOCKER-VERSION		1.10.3
 #
 #Dockerizing CentOS7:Dockerfile for building CentOS images
-#Centos目前最新版，可以根据实际情况更换版本，目前是docker上面pull
+#Centos版本
 FROM centos:centos7.2.1511
 
 
