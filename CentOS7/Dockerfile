@@ -1,5 +1,5 @@
 #
-#MAINTAINER	Chrlis
+#MAINTAINER	Chrlis.zhang
 #DOCKER-VERSION		1.10.3
 #
 #Dockerizing CentOS7:Dockerfile for building CentOS images
@@ -11,8 +11,7 @@ ENV TZ "Asia/shanghai"
 ENV TERX xterm
 
 
-#注释的是替换成阿里源，根据情况选择
-
+#替换成阿里源，根据情况选择
 #这个是直接网络上下载
 #RUN yum install -y wget epel-release
 #RUN mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
