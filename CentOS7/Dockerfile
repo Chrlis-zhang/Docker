@@ -3,6 +3,7 @@
 #DOCKER-VERSION		1.10.3
 #
 #Dockerizing CentOS7:Dockerfile for building CentOS images
+
 #Centos版本
 FROM centos:centos7.1.150
 
@@ -32,7 +33,7 @@ RUN pip install supervisor
 
 ADD supervisord.conf /etc/supervisord.conf
 
-RUN mkdir -p /etc/supervsior.conf.d && \
+RUN mkdir -p /etc/supervisor.conf.d && \
     mkdir -p /var/log/supervisor
 
 EXPOSE 22
