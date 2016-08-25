@@ -26,16 +26,18 @@ ENV TERX xterm
 #yum安装一些软件，可以根据实际情况进行调整
 RUN yum install -y curl wget lrzsz vim net-tools epel-release && \
     yum install -y gcc gcc-c++ make automake cmake python-devel libpng-devel libjpeg-devel && \
-    yum install -y python-pip && \
+   yum install -y --enablerepo=epel pwgen python-pip && \
     yum clean all
 
-RUN pip install supervisor
+RUN pip install --upgrade pip
 
-ADD supervisord.conf /etc/supervisord.conf
+#RUN pip install supervisor
 
-RUN mkdir -p /etc/supervisor.conf.d && \
-    mkdir -p /var/log/supervisor
+#ADD supervisord.conf /etc/supervisord.conf
+
+#RUN mkdir -p /etc/supervisor.conf.d && \
+#    mkdir -p /var/log/supervisor
 
 EXPOSE 22
 
-ENTRYPOINT ["/usr/bin/supervisord","-n","-c","/etc/supervisord.conf"] 
+#ENTRYPOINT ["/usr/bin/supervisord","-n","-c","/etc/supervisord.conf"] 
