@@ -4,7 +4,7 @@
 #
 #Dockerizing CentOS7:Dockerfile for building CentOS images
 #Centos版本
-FROM centos:centos7.2.1511
+FROM centos:centos7.1.150
 
 
 ENV TZ "Asia/shanghai"
